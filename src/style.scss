@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+$black: #131419;
+$white: #f2f3f7;
+
+.root {
+  flex-grow: 1;
+  background: $white;
+  color: $black;
+  font-family: "Raleway", sans-serif;
+  &.night {
+    background: $black;
+    color: $white;
+    .nav {
+      background: $white;
+      a {
+        color: $black;
+        &::after {
+          content: "";
+          border-bottom: 3px solid $black;
+        }
+      }
+      .toggle {
+        &.active {
+          border: 2px solid $black;
+        }
+        .dark {
+          color: $white;
+        }
+      }
+    }
+    .home {
+      .ava {
+        background: $black;
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+          5px 5px 15px rgba(0, 0, 0, 0.5);
+      }
+      .title {
+        .btnHome {
+          background: $black;
+          color: $white;
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+            5px 5px 15px rgba(0, 0, 0, 0.5);
+          &:hover {
+            box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+      .sosmed {
+        a {
+          background: $black;
+          color: $white;
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+            5px 5px 15px rgba(0, 0, 0, 0.5);
+          &:hover {
+            box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+          }
+          .icon {
+            color: $white;
+          }
+        }
+      }
+    }
+    .about {
+      .title {
+        .btnAbout {
+          border: 2px solid $black;
+          background: $black;
+          color: $white;
+
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+            5px 5px 15px rgba(0, 0, 0, 0.5);
+          &:hover {
+            box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+
+    .skills {
+      .card {
+        border: 2px solid $black;
+        background: $black;
+        color: $white;
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+          5px 5px 15px rgba(0, 0, 0, 0.5);
+        .card-sub {
+          color: $white;
+        }
+      }
+    }
+
+    .portfolio {
+      .card {
+        border: 2px solid $black;
+        background: $black;
+        color: $white;
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+          5px 5px 15px rgba(0, 0, 0, 0.5);
+        .item {
+          &:hover {
+            .overlay {
+              box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+                5px 5px 15px rgba(0, 0, 0, 0.5);
+            }
+          }
+          .overlay {
+            background: $black;
+            .content {
+              h3 {
+                color: $white;
+              }
+              a {
+                color: $white;
+                &:hover {
+                  background: $white;
+                  color: $black;
+                  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+                    5px 5px 15px rgba(0, 0, 0, 0.5);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      .form {
+        .form-contact {
+          border: 2px solid $black;
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+            5px 5px 15px rgba(0, 0, 0, 0.5);
+          &:hover,
+          &:active,
+          &:focus {
+            border: 2px solid $black;
+            background-color: $black;
+            box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+      .center {
+        .btnMessage {
+          background: $black;
+          color: $white;
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+            5px 5px 15px rgba(0, 0, 0, 0.5);
+          &:hover {
+            background-color: $black;
+            box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+    .MuiFormLabel-root {
+      color: $white !important;
+    }
+  }
+
+  .nav {
+    position: fixed;
+    background: $black;
+    color: $white;
+    box-shadow: none;
+    text-transform: capitalize;
+    .toggle {
+      position: fixed;
+      top: 15px;
+      right: 30px;
+      z-index: 10;
+      background: $white;
+      border: 2px solid $black;
+      height: 30px;
+      width: 95px;
+      padding: 0 10px;
+      cursor: pointer;
+      border-radius: 20px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      &.active {
+        background: $black;
+        border: 2px solid $white;
+        content: "Dark";
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 3px;
+        width: 52px;
+        height: 26px;
+        background: $black;
+        border-radius: 100px;
+        transition: 0.5s;
+      }
+      &.active::before {
+        left: 59px;
+        background: $white;
+      }
+      .dark,
+      .light {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $black;
+      }
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+      padding: 0 13px;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: bold;
+      &:hover {
+        background-color: transparent;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        transition: width 0.5s;
+        border-bottom: 3px solid $white;
+        border-radius: 10px;
+        // margin-top: -20px;
+      }
+      &:hover::after {
+        width: 50%;
+        transition: width 0.5s;
+      }
+      &.dropdown-trigger::after,
+      &.nb::after {
+        content: "";
+        border-bottom: none;
+      }
+    }
+  }
+}
+//  Home
+.home {
+  min-height: 90vh;
+  margin-top: 76px;
+  .corresponding {
+    height: 100vh;
+  }
+  .ava {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: $white;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+      5px 5px 15px rgba(0, 0, 0, 0.1);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .title {
+    width: 100%;
+    // max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      margin: 0 auto;
+      font-size: 3vw;
+      font-weight: 700;
+      margin-bottom: 0.2em;
+    }
+    h5 {
+      margin: 0 auto;
+      font-size: 2vw;
+      font-weight: 400;
+      margin-bottom: 0.6em;
+    }
+    .btnHome {
+      text-transform: capitalize;
+      border-radius: 150px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      background: $white;
+      color: $black;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+        5px 5px 15px rgba(0, 0, 0, 0.1);
+      &:hover {
+        box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+          inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      &.hm {
+        margin-right: 15px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .iconrg {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  .sosmed {
+    padding: 0;
+    &:hover {
+      background: transparent;
+    }
+    a {
+      position: relative;
+      width: 50px;
+      border-radius: 100px;
+      height: 50px;
+      background: $white;
+      color: $black;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+        5px 5px 15px rgba(0, 0, 0, 0.1);
+      &:hover {
+        box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+          inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      // margin-right: 20px;
+      min-width: 0;
+      .icon {
+        color: $black;
+        font-size: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+// End Home
+
+// About
+.about {
+  height: 95vh;
+  position: relative;
+  .title {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      margin: 0 auto;
+      font-size: 3vw;
+      font-weight: 700;
+    }
+    p {
+      margin: 2em 0 3em;
+    }
+    .btnAbout {
+      border-radius: 100%;
+      margin-left: 10px;
+      width: 70px;
+      height: 70px;
+      border: 2px solid $white;
+      background: $white;
+      color: $black;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+        5px 5px 15px rgba(0, 0, 0, 0.1);
+      &:hover {
+        box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+          inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .icon {
+        font-size: 30px;
+      }
+    }
+  }
+}
+// End About
+
+// Skills
+.skills {
+  height: 95vh;
+  h2 {
+    margin: 0 auto;
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    text-align: center;
+  }
+  .card {
+    border: 2px solid $white;
+    background: $white;
+    color: $black;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+      5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    .card-sub {
+      // text-align: center;
+      color: $black;
+      font-size: 2vw;
+      font-weight: 700;
+      margin: 0.5em 0;
+    }
+  }
+  span {
+    margin-left: 8px;
+  }
+  .half {
+    display: inline-block;
+    width: 100%;
+  }
+  .imageIcon {
+    height: 100%;
+  }
+  .iconRoot {
+    text-align: center;
+  }
+}
+// End Skills
+
+// Portfolio
+.portfolio {
+  height: 95vh;
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+  }
+  .card {
+    border: 2px solid $white;
+    background: $white;
+    color: $black;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+      5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+    }
+    .item {
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      max-width: 100%;
+      // height: 25vh;
+      &:hover {
+        cursor: pointer;
+        .overlay {
+          display: block;
+          opacity: 0.85;
+          border-radius: 10px;
+          box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+            inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+      }
+      img {
+        max-width: 100%;
+        font-size: 0;
+        margin-bottom: -5px;
+        height: calc(100%);
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .overlay {
+        height: calc(100%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        background: $white;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        .content {
+          position: absolute;
+          width: 100%;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          h3 {
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            color: $black;
+            text-align: center;
+          }
+          a {
+            padding: 0;
+            text-decoration: none;
+            transition: all 0.1s ease-in-out;
+            color: $black;
+            font-weight: 500;
+            font-size: 1em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 45px;
+            &:hover {
+              background: $black;
+              padding: 10px 15px;
+              color: $white;
+              box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Portfolio
+
+// Contact
+fieldset {
+  border: none !important;
+  border-radius: 5px !important;
+}
+.MuiFormLabel-root {
+  color: $black !important;
+  // border: 2px solid $black;
+}
+.contact {
+  // height: 95vh;
+  .iconrg {
+    width: 18px;
+    height: 18px;
+  }
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+  }
+  p {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .form {
+    margin: 0 auto;
+    width: 55%;
+    .form-contact {
+      width: 100%;
+      border: 2px solid $white;
+      border-radius: 5px;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+        5px 5px 15px rgba(0, 0, 0, 0.1);
+      &:hover,
+      &:active,
+      &:focus {
+        border: 2px solid $white;
+        background-color: $white;
+        box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+          inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .center {
+    width: 40%;
+    margin: 0 auto;
+    .btnMessage {
+      font-weight: 700;
+      margin-top: 2em;
+      padding: 15px 0;
+      width: 100%;
+      text-transform: capitalize;
+      border-radius: 150px;
+      font-size: 14px;
+      background: $white;
+      color: $black;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+        5px 5px 15px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: $white;
+        box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+          inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .sosmed {
+    padding: 0;
+    &:hover {
+      background: transparent;
+    }
+    a {
+      position: relative;
+      width: 50px;
+      border-radius: 100px;
+      height: 50px;
+      background: $white;
+      color: $black;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+        5px 5px 15px rgba(0, 0, 0, 0.1);
+      &:hover {
+        box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+          inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      // margin-right: 20px;
+      min-width: 0;
+      .icon {
+        color: $black;
+        font-size: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+// End Contact
