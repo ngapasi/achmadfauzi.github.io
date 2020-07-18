@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d02f3d6e1542f4b3ded4ef81628f7cc2",
+    "revision": "53cd747ac1dfb5274902c93b8c2e29e6",
     "url": "/achmadfauzi.github.io/index.html"
   },
   {
-    "revision": "12f4d2df13c2610821f1",
-    "url": "/achmadfauzi.github.io/static/css/main.ce51051c.chunk.css"
+    "revision": "f8d8fade69ba5695f8e7",
+    "url": "/achmadfauzi.github.io/static/css/main.1f4981b1.chunk.css"
   },
   {
-    "revision": "4f36ef1f2cd4d8bfe6d3",
-    "url": "/achmadfauzi.github.io/static/js/2.8a2114e3.chunk.js"
+    "revision": "61dc07006cc7f2f41a7d",
+    "url": "/achmadfauzi.github.io/static/js/2.4e0714e6.chunk.js"
   },
   {
     "revision": "0bf38cf6c0b51ec69d7a52e8875a6dbf",
-    "url": "/achmadfauzi.github.io/static/js/2.8a2114e3.chunk.js.LICENSE.txt"
+    "url": "/achmadfauzi.github.io/static/js/2.4e0714e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "12f4d2df13c2610821f1",
-    "url": "/achmadfauzi.github.io/static/js/main.425c12a5.chunk.js"
+    "revision": "f8d8fade69ba5695f8e7",
+    "url": "/achmadfauzi.github.io/static/js/main.c3f28e10.chunk.js"
   },
   {
     "revision": "b1b34c57895beee84c06",

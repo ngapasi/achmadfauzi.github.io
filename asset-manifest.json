@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/achmadfauzi.github.io/static/css/main.ce51051c.chunk.css",
-    "main.js": "/achmadfauzi.github.io/static/js/main.425c12a5.chunk.js",
-    "main.js.map": "/achmadfauzi.github.io/static/js/main.425c12a5.chunk.js.map",
+    "main.css": "/achmadfauzi.github.io/static/css/main.1f4981b1.chunk.css",
+    "main.js": "/achmadfauzi.github.io/static/js/main.c3f28e10.chunk.js",
+    "main.js.map": "/achmadfauzi.github.io/static/js/main.c3f28e10.chunk.js.map",
     "runtime-main.js": "/achmadfauzi.github.io/static/js/runtime-main.22d65210.js",
     "runtime-main.js.map": "/achmadfauzi.github.io/static/js/runtime-main.22d65210.js.map",
-    "static/js/2.8a2114e3.chunk.js": "/achmadfauzi.github.io/static/js/2.8a2114e3.chunk.js",
-    "static/js/2.8a2114e3.chunk.js.map": "/achmadfauzi.github.io/static/js/2.8a2114e3.chunk.js.map",
+    "static/js/2.4e0714e6.chunk.js": "/achmadfauzi.github.io/static/js/2.4e0714e6.chunk.js",
+    "static/js/2.4e0714e6.chunk.js.map": "/achmadfauzi.github.io/static/js/2.4e0714e6.chunk.js.map",
     "index.html": "/achmadfauzi.github.io/index.html",
-    "precache-manifest.2551ce3dc3c260ef3aa6fcd2bd911395.js": "/achmadfauzi.github.io/precache-manifest.2551ce3dc3c260ef3aa6fcd2bd911395.js",
+    "precache-manifest.70e0c89e4fb8e1dcdff4b37d0c828915.js": "/achmadfauzi.github.io/precache-manifest.70e0c89e4fb8e1dcdff4b37d0c828915.js",
     "service-worker.js": "/achmadfauzi.github.io/service-worker.js",
-    "static/css/main.ce51051c.chunk.css.map": "/achmadfauzi.github.io/static/css/main.ce51051c.chunk.css.map",
-    "static/js/2.8a2114e3.chunk.js.LICENSE.txt": "/achmadfauzi.github.io/static/js/2.8a2114e3.chunk.js.LICENSE.txt",
+    "static/css/main.1f4981b1.chunk.css.map": "/achmadfauzi.github.io/static/css/main.1f4981b1.chunk.css.map",
+    "static/js/2.4e0714e6.chunk.js.LICENSE.txt": "/achmadfauzi.github.io/static/js/2.4e0714e6.chunk.js.LICENSE.txt",
     "static/media/item10.jpg": "/achmadfauzi.github.io/static/media/item10.6250c1e4.jpg",
     "static/media/logo1.jpg": "/achmadfauzi.github.io/static/media/logo1.abc21d69.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.22d65210.js",
-    "static/js/2.8a2114e3.chunk.js",
-    "static/css/main.ce51051c.chunk.css",
-    "static/js/main.425c12a5.chunk.js"
+    "static/js/2.4e0714e6.chunk.js",
+    "static/css/main.1f4981b1.chunk.css",
+    "static/js/main.c3f28e10.chunk.js"
   ]
 }
