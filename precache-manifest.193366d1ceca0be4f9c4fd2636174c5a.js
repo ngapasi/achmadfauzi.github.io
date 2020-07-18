@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53cd747ac1dfb5274902c93b8c2e29e6",
+    "revision": "9dada08042a1f62487986519729574fd",
     "url": "/achmadfauzi.github.io/index.html"
   },
   {
-    "revision": "f8d8fade69ba5695f8e7",
-    "url": "/achmadfauzi.github.io/static/css/main.1f4981b1.chunk.css"
+    "revision": "80ad908add43decc4325",
+    "url": "/achmadfauzi.github.io/static/css/main.e93f0aeb.chunk.css"
   },
   {
     "revision": "61dc07006cc7f2f41a7d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/achmadfauzi.github.io/static/js/2.4e0714e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8d8fade69ba5695f8e7",
-    "url": "/achmadfauzi.github.io/static/js/main.c3f28e10.chunk.js"
+    "revision": "80ad908add43decc4325",
+    "url": "/achmadfauzi.github.io/static/js/main.9e590dcb.chunk.js"
   },
   {
     "revision": "b1b34c57895beee84c06",
