@@ -28,7 +28,8 @@ import TelegramIcon from "@material-ui/icons/Telegram";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import PaletteIcon from "@material-ui/icons/Palette";
-import CreateIcon from "@material-ui/icons/Create";
+import MovieIcon from "@material-ui/icons/Movie";
+// import CreateIcon from "@material-ui/icons/Create";
 import HeadsetIcon from "@material-ui/icons/Headset";
 import CodeIcon from "@material-ui/icons/Code";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
@@ -71,7 +72,7 @@ function App() {
     <div className="root">
       <Grid container direction="row">
         <AppBar className="nav" position="fixed">
-          <Toolbar>
+          <Toolbar className="nav-left">
             <Scrollspy
               items={["home", "about", "skills", "portfolio", "contact"]}
               currentClassName="is-current"
@@ -91,8 +92,10 @@ function App() {
       </Grid>
       <Container maxWidth="lg">
         <div className="home" id="home">
-          <Grid container spacing={3} className="corresponding">
+          <Grid container>
             <Grid
+              spacing={3}
+              className="corresponding"
               container
               direction="row"
               justify="center"
@@ -112,6 +115,7 @@ function App() {
                     Hire Me
                   </Button>
                   <Button
+                    href="#portfolio"
                     className="btnHome mp"
                     variant="contained"
                     endIcon={<ArrowDownwardIcon />}
@@ -183,7 +187,7 @@ function App() {
       </Container>
       <Container maxWidth="lg">
         <div className="about" id="about">
-          <Grid spacing={3}>
+          <Grid container spacing={3}>
             <Grid item xs={12}>
               <div className="title">
                 <h2>Hi, Nice to meet you!</h2>
@@ -206,9 +210,9 @@ function App() {
                     <PaletteIcon className="icon" />
                   </Button>
                 </Tooltip>
-                <Tooltip TransitionComponent={Zoom} title="Writing" arrow>
+                <Tooltip TransitionComponent={Zoom} title="Movie" arrow>
                   <Button className="btnAbout">
-                    <CreateIcon className="icon" />
+                    <MovieIcon className="icon" />
                   </Button>
                 </Tooltip>
                 <Tooltip TransitionComponent={Zoom} title="Music" arrow>
@@ -453,10 +457,7 @@ function App() {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="-50 -50 300 200"
                       >
-                        <path
-                          style={{ fill: "#131419" }}
-                          d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z"
-                        />
+                        <path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z" />
                       </svg>
                       <ListItemText primary="Tailwind CSS" />
                     </ListItem>
@@ -748,13 +749,15 @@ function App() {
               </div>
             </Grid>
             <Grid item xs={12}>
-              <Typography className="right">
+              <Typography>
                 <WhatsAppIcon className="iconrg" /> +62 896 3982 3858, &nbsp;
                 <MailOutlineIcon className="iconrg" />
                 ahmadfauzi2526@gmail.com
               </Typography>
-              <p>Jalan SMA 63, Pesanggrahan, Petukangan Utara</p>
-              <p>Jakarta Selatan, Indonesia</p>
+              <Typography>
+                Jalan SMA 63, Pesanggrahan, Petukangan Utara
+              </Typography>
+              <Typography>Jakarta Selatan, Indonesia</Typography>
             </Grid>
           </Grid>
         </div>

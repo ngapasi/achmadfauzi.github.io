@@ -10,6 +10,7 @@ $white: #f2f3f7;
   &.night {
     background: $black;
     color: $white;
+    transition: 0.5s;
     .nav {
       background: $white;
       a {
@@ -78,7 +79,6 @@ $white: #f2f3f7;
         }
       }
     }
-
     .skills {
       .card {
         border: 2px solid $black;
@@ -89,9 +89,11 @@ $white: #f2f3f7;
         .card-sub {
           color: $white;
         }
+        svg {
+          fill: $white;
+        }
       }
     }
-
     .portfolio {
       .card {
         border: 2px solid $black;
@@ -126,7 +128,6 @@ $white: #f2f3f7;
         }
       }
     }
-
     .contact {
       .form {
         .form-contact {
@@ -160,6 +161,9 @@ $white: #f2f3f7;
     .MuiFormLabel-root {
       color: $white !important;
     }
+    .MuiOutlinedInput-input {
+      color: $white;
+    }
   }
 
   .nav {
@@ -168,6 +172,9 @@ $white: #f2f3f7;
     color: $white;
     box-shadow: none;
     text-transform: capitalize;
+    .nav-left {
+      display: contents;
+    }
     .toggle {
       position: fixed;
       top: 15px;
@@ -341,7 +348,7 @@ $white: #f2f3f7;
 
 // About
 .about {
-  height: 95vh;
+  height: 100vh;
   position: relative;
   .title {
     position: absolute;
@@ -383,7 +390,7 @@ $white: #f2f3f7;
 
 // Skills
 .skills {
-  height: 95vh;
+  min-height: 100vh;
   h2 {
     margin: 0 auto;
     font-size: 3vw;
@@ -424,7 +431,7 @@ $white: #f2f3f7;
 
 // Portfolio
 .portfolio {
-  height: 95vh;
+  min-height: 100vh;
   h2 {
     text-align: center;
     margin: 0 auto;
@@ -528,11 +535,11 @@ fieldset {
 }
 .MuiFormLabel-root {
   color: $black !important;
-  // border: 2px solid $black;
 }
 .contact {
-  // height: 95vh;
+  // height: 100vh;
   .iconrg {
+    vertical-align: sub;
     width: 18px;
     height: 18px;
   }
@@ -622,3 +629,42 @@ fieldset {
   }
 }
 // End Contact
+
+// Responsive
+
+// Tablet
+@media only screen and (min-width: 768px) {
+  .root {
+    .nav {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+  .about {
+    .title {
+      max-width: 70%;
+    }
+  }
+
+  .contact {
+    p {
+      max-width: 70%;
+    }
+    .form {
+      width: 70%;
+    }
+    .center {
+      .btnMessage {
+        padding: 10px 0;
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .skills,
+  .portfolio,
+  .contact {
+    padding-top: 100px;
+  }
+}
